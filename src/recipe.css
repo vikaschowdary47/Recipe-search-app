@@ -1,0 +1,39 @@
+/* .card{
+    height: 10vh;
+    width: 1000px;
+    border: 1px solid lightgray ;
+    display: flex;
+    flex-wrap: wrap;
+} */
+.card{
+border: 1px solid black;
+width: 1000px;
+margin: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+background-color: white;
+min-width: 40%;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+.check-box{
+text-align: left;
+}
+.check-box li {
+    list-style: none;
+}
+.list{
+    /* display: grid;
+    grid-template-columns: auto auto;
+grid-gap: -100px; */
+    /* text-align: left; */
+}
+.items{
+    
+}

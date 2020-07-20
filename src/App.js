@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Recipe from './Recipe';
+require('dotenv').config();
 
 function App() {
   const API_ID = "4647a8ac";
