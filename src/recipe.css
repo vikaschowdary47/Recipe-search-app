@@ -1,20 +1,30 @@
-/* .card{
-    height: 10vh;
-    width: 1000px;
-    border: 1px solid lightgray ;
-    display: flex;
-    flex-wrap: wrap;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&family=Roboto:ital,wght@1,500&display=swap');
+
+
 .card{
 border: 1px solid black;
-width: 1000px;
+width: 40%;
+border-radius: 6px;
+box-shadow: 2px 4px 9px 4px rgba(15,14,15,0.81);
 margin: 10px;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-around;
 background-color: white;
+line-height: 2rem;
 min-width: 40%;
+}
+.title{
+margin-top: 10px;
+padding: 4px;
+font-family: 'Oxygen', sans-serif;
+}
+
+.cal{
+    text-transform: uppercase;
+    margin: 5px 0;
+    padding: 2px;
 }
 
 img{
@@ -24,16 +34,15 @@ img{
 }
 .check-box{
 text-align: left;
-}
-.check-box li {
-    list-style: none;
-}
-.list{
-    /* display: grid;
-    grid-template-columns: auto auto;
-grid-gap: -100px; */
-    /* text-align: left; */
+padding: 2rem;
+
 }
 .items{
-    
+    font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width:1000px){
+    .card{
+        width: 70%;
+    }
 }

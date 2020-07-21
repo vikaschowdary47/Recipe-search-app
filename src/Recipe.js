@@ -4,8 +4,8 @@ import './recipe.css'
 function Recipe({ title, calories, image, ingredients }) {
     return (
         <div className="card">
-            <h1>title = {title}</h1>
-            <p>calories ={calories}</p>
+            <h1 className="title">{title}</h1>
+            <p className="cal">Calories :{calories}</p>
 
             <div className="check-box">
                 <ol>

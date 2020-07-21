@@ -35,17 +35,18 @@ function App() {
 
   return (
     <div className="App">
-
-      <div className="form">
-        <form onSubmit={searchText}>
-          <input type="text" placeholder="search for your fav recipe.." value={search} onChange={typeText}></input>
-          <button type="submit" className="search" >search</button>
-        </form>
-      </div>
-      <div className="recipes">
-        {recipes.map(recipe => (
-          <Recipe key={recipe.recipe.label} title={recipe.recipe.label} calories={recipe.recipe.calories} image={recipe.recipe.image} ingredients={recipe.recipe.ingredients} />
-        ))}
+      <div className="container">
+        <div className="form">
+          <form onSubmit={searchText}>
+            <input type="text" placeholder="search for your fav recipe.." value={search} onChange={typeText}></input>
+            <button type="submit" className="search" >search</button>
+          </form>
+        </div>
+        <div className="recipes">
+          {recipes.map(recipe => (
+            <Recipe key={recipe.recipe.label} title={recipe.recipe.label} calories={recipe.recipe.calories} image={recipe.recipe.image} ingredients={recipe.recipe.ingredients} />
+          ))}
+        </div>
       </div>
     </div>
   );
